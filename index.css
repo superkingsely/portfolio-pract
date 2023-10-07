@@ -1,0 +1,94 @@
+/* css variable */
+:root {
+  --body-color: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  min-height: 100vh;
+  /* background-color:var(--body-color) ; */
+}
+.app-bg-light {
+  background-color: rgb(231, 231, 231);
+}
+.app-bg-dark {
+  background-color: rgb(46, 46, 46);
+}
+.bg-white1 {
+  background-color: white;
+}
+.nav-white {
+  color: black;
+}
+.bg-black1 {
+  background-color: black;
+}
+.nav-dark1 {
+  color: white;
+}
+/* main */
+section {
+  min-height: 70vh;
+  /* border: 2px solid blue; */
+}
+.home {
+  min-height: 70vh;
+  background-color: white;
+}
+.home--data {
+  display: grid;
+}
+.home--title {
+  text-align: center;
+}
+.home--blog {
+  position: relative;
+  width: 200px;
+  height: 290px;
+  border: 2px solid;
+  justify-self: center;
+  border-radius: 6.25rem;
+  /* place-items: center; */
+
+  display: grid;
+}
+.home--perfil {
+  width: 170px;
+  height: 260px;
+  background-color: rgba(0, 255, 255, 0.308);
+  border-radius: 5.5rem;
+
+  justify-self: center;
+  align-self: center;
+}
+.home--social {
+  justify-self: center;
+  display: flex;
+  column-gap: 1.25rem;
+  padding: 5px;
+}
+@media screen and (min-width: 900px) {
+  .home--container {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+  }
+  .home--data {
+    display: none;
+  }
+  .home--data-center {
+    display: grid;
+    /* border: 2px solid; */
+  }
+}
+@media screen and (max-width: 900px){
+    .home--data-center {
+        display: none;
+      }
+}
+    
+
